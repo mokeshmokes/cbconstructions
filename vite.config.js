@@ -16,7 +16,11 @@ export default defineConfig({
                     icons: ['lucide-react']
                 }
             }
-        }
+        },
+        // Prevent build from hanging
+        reportCompressedSize: false,
+        // Increase chunk size limit
+        chunkSizeWarningLimit: 2000
     },
     server: {
         port: 3000,
@@ -24,5 +28,9 @@ export default defineConfig({
     },
     preview: {
         port: 4173
+    },
+    // Optimize dependencies
+    optimizeDeps: {
+        include: ['react', 'react-dom', 'framer-motion', 'lucide-react']
     }
 })

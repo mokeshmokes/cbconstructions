@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import companyLogo from '../assets/logo/company-logo.PNG'
+import companyLogo from '../assets/logo/company-logo.png'
 
 /**
  * Clean Professional Logo Component for CB Building Approval
