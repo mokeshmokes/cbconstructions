@@ -1,38 +1,71 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import QualityFeatures from './components/QualityFeatures'
-import About from './components/About'
-import Services from './components/Services'
-import Packages from './components/Packages'
-import WhyChooseUs from './components/WhyChooseUs'
-import Statistics from './components/Statistics'
-import Projects from './components/Projects'
-import WorkProcess from './components/WorkProcess'
-import CTABanner from './components/CTABanner'
-import Testimonials from './components/Testimonials'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+
+// Lazy load components for better performance
+const QualityFeatures = lazy(() => import('./components/QualityFeatures'))
+const About = lazy(() => import('./components/About'))
+const Services = lazy(() => import('./components/Services'))
+const Packages = lazy(() => import('./components/Packages'))
+const WhyChooseUs = lazy(() => import('./components/WhyChooseUs'))
+const Statistics = lazy(() => import('./components/Statistics'))
+const Projects = lazy(() => import('./components/Projects'))
+const WorkProcess = lazy(() => import('./components/WorkProcess'))
+const CTABanner = lazy(() => import('./components/CTABanner'))
+const Testimonials = lazy(() => import('./components/Testimonials'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
+
+// Loading component
+const SectionLoader = () => (
+    <div className="flex items-center justify-center py-20">
+        <div className="w-12 h-12 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
+    </div>
+)
 
 export default function App() {
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-white">
             <Navbar />
             <main>
                 <Hero />
-                <QualityFeatures />
-                <About />
-                <Services />
-                <Packages />
-                <WhyChooseUs />
-                <Statistics />
-                <Projects />
-                <WorkProcess />
-                <CTABanner />
-                <Testimonials />
-                <Contact />
+                <Suspense fallback={<SectionLoader />}>
+                    <QualityFeatures />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <About />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <Services />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <Packages />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <WhyChooseUs />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <Statistics />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <Projects />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <WorkProcess />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <CTABanner />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <Testimonials />
+                </Suspense>
+                <Suspense fallback={<SectionLoader />}>
+                    <Contact />
+                </Suspense>
             </main>
-            <Footer />
+            <Suspense fallback={<SectionLoader />}>
+                <Footer />
+            </Suspense>
         </div>
     )
 }

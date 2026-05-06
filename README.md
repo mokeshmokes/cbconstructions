@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# CB Construction - Premium Construction Company Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, premium-quality construction company website built with React, Vite, Tailwind CSS, and Framer Motion.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern & Premium Design**: Glassmorphism effects, smooth animations, and premium UI components
+- **Fully Responsive**: Perfect display on mobile, tablet, laptop, and desktop screens
+- **Performance Optimized**: Lazy loading, code splitting, and optimized bundle size
+- **Smooth Animations**: Framer Motion powered scroll reveals and interactions
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Production Ready**: Optimized for Vercel deployment
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18.3.1** - Modern React with hooks
+- **Vite 5.4.6** - Lightning-fast build tool
+- **Tailwind CSS 3.4.10** - Utility-first CSS framework
+- **Framer Motion 11.5.4** - Production-ready animation library
+- **Lucide React 0.441.0** - Beautiful icon library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+```bash
+# Install dependencies
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Start development server
+npm run dev
 
-### `npm run build`
+# Build for production
+npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Preview production build
+npm run preview
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌐 Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Vercel (Recommended)
 
-### `npm run eject`
+1. Push your code to GitHub
+2. Import project in Vercel
+3. Vercel will auto-detect Vite and deploy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Or use Vercel CLI:
+```bash
+npm install -g vercel
+vercel
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Manual Build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The `dist` folder contains the production-ready files.
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/       # React components
+├── data/            # Content data (centralized)
+├── hooks/           # Custom React hooks
+├── utils/           # Utility functions
+├── App.jsx          # Main app component
+├── main.jsx         # Entry point
+└── index.css        # Global styles
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Key Features
 
-### Code Splitting
+### Premium UI Components
+- Glassmorphism effects
+- Smooth gradient backgrounds
+- Interactive hover states
+- Premium card designs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Animations
+- Scroll-based reveal animations
+- Smooth page transitions
+- Interactive micro-animations
+- Parallax effects
 
-### Analyzing the Bundle Size
+### Performance
+- Lazy loading components
+- Code splitting
+- Optimized images
+- Minimal bundle size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Responsive Design
+- Mobile-first approach
+- Breakpoints for all devices
+- Touch-friendly interactions
+- Optimized layouts
 
-### Making a Progressive Web App
+## 📝 Content Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+All content is centralized in `src/data/content.js` for easy updates without touching component code.
 
-### Advanced Configuration
+## 🔧 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Vite Config**: `vite.config.js`
+- **Tailwind Config**: `tailwind.config.js`
+- **PostCSS Config**: `postcss.config.js`
 
-### Deployment
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+© 2024 CB Construction India Pvt Ltd. All rights reserved.
 
-### `npm run build` fails to minify
+## 🤝 Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For support, email info@cbconstructions.in or call +91-7448922333
