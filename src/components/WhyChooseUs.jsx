@@ -1,15 +1,16 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Award, Users, Package, MessageCircle, Eye, Search } from 'lucide-react'
+import { Zap, Users, ShieldCheck, Eye, Headphones, Award } from 'lucide-react'
 import { whyChooseUs } from '../data/content'
+import CertificationBadge from './CertificationBadge'
 
 const iconMap = {
-    award: Award,
+    zap: Zap,
     users: Users,
-    package: Package,
-    'message-circle': MessageCircle,
+    'shield-check': ShieldCheck,
     eye: Eye,
-    search: Search,
+    headphones: Headphones,
+    award: Award,
 }
 
 export default function WhyChooseUs() {
@@ -173,14 +174,12 @@ export default function WhyChooseUs() {
                         </div>
 
                         <div className="relative z-10">
-                            <div className="flex items-center justify-center space-x-4 mb-6">
-                                <div className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center">
-                                    <Award className="w-8 h-8 text-white" />
-                                </div>
-                                <div className="text-left">
-                                    <h3 className="text-2xl font-bold text-white">ISO 9001:2015 Certified</h3>
-                                    <p className="text-gray-300">Quality Management System</p>
-                                </div>
+                            <div className="flex items-center justify-center mb-6">
+                                <CertificationBadge
+                                    size="xl"
+                                    animate={true}
+                                    theme="dark"
+                                />
                             </div>
 
                             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">

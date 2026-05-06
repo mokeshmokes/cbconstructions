@@ -10,7 +10,7 @@ export default function Contact() {
         name: '',
         email: '',
         phone: '',
-        subject: '',
+        approvalType: '',
         message: ''
     })
     const [isSubmitting, setIsSubmitting] = useState(false)
@@ -40,7 +40,7 @@ export default function Contact() {
                 name: '',
                 email: '',
                 phone: '',
-                subject: '',
+                approvalType: '',
                 message: ''
             })
         }, 3000)
@@ -120,10 +120,10 @@ export default function Contact() {
                             Get In Touch
                         </span>
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                            Let's Build Something Amazing Together
+                            Let's Get Your Approval Started
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Ready to start your construction project? Get in touch with our expert team for a free consultation and quote.
+                            Ready to start your building approval process? Get in touch with our expert team for a free consultation and quote.
                         </p>
                     </motion.div>
                 </motion.div>
@@ -268,17 +268,18 @@ export default function Contact() {
 
                                             <div className="relative">
                                                 <select
-                                                    name="subject"
-                                                    value={formData.subject}
+                                                    name="approvalType"
+                                                    value={formData.approvalType}
                                                     onChange={handleInputChange}
                                                     required
                                                     className="w-full px-4 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                                                 >
-                                                    <option value="">Select Subject *</option>
-                                                    <option value="new-construction">New Construction</option>
-                                                    <option value="renovation">Renovation</option>
-                                                    <option value="commercial">Commercial Project</option>
-                                                    <option value="consultation">Free Consultation</option>
+                                                    <option value="">Select Approval Type *</option>
+                                                    <option value="dtcp">DTCP Approval</option>
+                                                    <option value="cmda">CMDA Approval</option>
+                                                    <option value="panchayat">Panchayat Approval</option>
+                                                    <option value="building-permit">Building Permit</option>
+                                                    <option value="layout">Layout Approval</option>
                                                     <option value="other">Other</option>
                                                 </select>
                                             </div>
@@ -295,7 +296,7 @@ export default function Contact() {
                                                 placeholder=" "
                                             />
                                             <label className="absolute left-4 top-4 text-gray-500 transition-all peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:scale-75">
-                                                Project Details *
+                                                Approval Requirements *
                                             </label>
                                         </div>
 

@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Phone, ArrowRight, Star } from 'lucide-react'
 import { ctaBanner } from '../data/content'
+import CertificationBadge from './CertificationBadge'
 
 export default function CTABanner() {
     const ref = useRef(null)
@@ -147,12 +148,12 @@ export default function CTABanner() {
                         variants={itemVariants}
                         className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
                     >
-                        <div className="glass-dark rounded-2xl p-6 text-center">
-                            <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4">
-                                <Star className="w-6 h-6 text-white" />
-                            </div>
-                            <h3 className="text-2xl font-bold mb-2">ISO Certified</h3>
-                            <p className="text-gray-300">Quality Management System</p>
+                        <div className="glass-dark rounded-2xl p-6 text-center flex items-center justify-center">
+                            <CertificationBadge
+                                size="sm"
+                                animate={false}
+                                theme="dark"
+                            />
                         </div>
 
                         <div className="glass-dark rounded-2xl p-6 text-center">

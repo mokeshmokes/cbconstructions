@@ -1,16 +1,16 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Layers, Star, Home, Clock, Users, Briefcase, Award, Smartphone } from 'lucide-react'
+import { FileCheck, Building, Landmark, Clock, Users, Briefcase, ShieldCheck, Smartphone, Award } from 'lucide-react'
 import { qualityFeatures } from '../data/content'
 
 const iconMap = {
-    layers: Layers,
-    star: Star,
-    home: Home,
+    'file-check': FileCheck,
+    building: Building,
+    landmark: Landmark,
     clock: Clock,
     users: Users,
     briefcase: Briefcase,
-    award: Award,
+    'shield-check': ShieldCheck,
     smartphone: Smartphone,
 }
 
@@ -58,7 +58,7 @@ export default function QualityFeatures() {
                     className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6"
                 >
                     {qualityFeatures.map((feature, index) => {
-                        const IconComponent = iconMap[feature.icon] || Star
+                        const IconComponent = iconMap[feature.icon] || Award
 
                         return (
                             <motion.div

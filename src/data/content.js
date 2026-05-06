@@ -1,284 +1,287 @@
 // ============================================================
-// CB Constructions India Pvt Ltd – Centralized Content File
-// All content sourced exactly from https://cbconstructions.in
+// CB Building Approval – Centralized Content File
+// Professional Building Approval & Government Consultancy Services
 // ============================================================
 
 export const navbarLinks = [
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
-    { label: 'Projects', href: '#projects' },
+    { label: 'Approvals', href: '#approvals' },
+    { label: 'Process', href: '#process' },
     { label: 'Contact', href: '#contact' },
 ]
 
 export const heroSection = {
-    tagline: 'Quality Defines Us',
-    heading: 'Welcome to CB Construction',
+    tagline: 'Fast & Trusted Building Approval Services',
+    heading: 'Your Approval Process Simplified',
     subheading:
-        "where we turn your vision into reality. We're dedicated to quality, integrity, and excellence, crafting homes that reflect your dreams and aspirations.",
-    ctaText: 'Explore Our Work',
-    ctaHref: '#projects',
-    secondaryCtaText: 'Contact Us',
-    secondaryCtaHref: '#contact',
+        "Expert guidance for all your building approval needs. From DTCP to CMDA, Panchayat to Building Permits – we handle everything with precision and speed. Get your approvals hassle-free.",
+    ctaText: 'Get Approval Consultation',
+    ctaHref: '#contact',
+    secondaryCtaText: 'View Services',
+    secondaryCtaHref: '#services',
 }
 
 export const aboutSection = {
-    badge: 'About Company',
-    heading: 'Building Beyond Expectations',
+    badge: 'About Us',
+    heading: 'Expert Building Approval Consultancy',
     description:
-        "Ever dreamed of your perfect home - a cozy farmhouse escape, a welcoming guest house, or a thriving commercial complex? At CB Construction, we're passionate about turning those dreams into reality. We're more than just builders; we're a team dedicated to working closely with you to create exceptional living and working spaces.",
+        "Navigating government approvals can be complex and time-consuming. At CB Building Approval, we simplify the entire process for you. With deep expertise in DTCP, CMDA, Panchayat, and all building approval procedures, we ensure your project gets approved quickly and legally.",
     description2:
-        "With years of experience in the construction industry, we've built a reputation for unwavering quality and exceptional customer service. We take pride in employing a highly skilled team of professionals, from experienced architects and designers to dedicated construction crews. This ensures that every project, from individual villas to bustling commercial complexes, receives the meticulous attention to detail it deserves.",
-    experience: '7 Years Experience',
+        "With over 10 years of experience in building approval consultancy, we've successfully processed 500+ approvals for residential, commercial, and industrial projects. Our team of legal experts, architects, and government liaison professionals work together to ensure 100% compliance and fast approval turnaround.",
+    experience: '10+ Years Experience',
     mission: {
         title: 'Mission',
-        text: "At CB Construction, we're here to make your dream space a reality. We work closely with you to understand your needs and budget, every project is unique! We prioritize excellent customer service and keep you informed throughout the process. Our skilled team uses the best materials to build high-quality spaces that last. We also offer eco-friendly options for a sustainable future.",
+        text: "Our mission is to make building approvals accessible, transparent, and hassle-free for everyone. We guide you through every step – from document preparation to final approval delivery. With our expert support, you can focus on your project while we handle all government procedures with precision and professionalism.",
     },
     vision: {
         title: 'Vision',
-        text: "We dream of a world where everyone has a well-built, comfortable space they love. We want to be a leader in creating these spaces, exceeding expectations and building more than just structures. We believe exceptional construction can improve lives and empower businesses. Our vision is to contribute to a future where everyone has a space that reflects their dreams and goals.",
+        text: "We envision a future where obtaining building approvals is no longer a barrier to development. By providing expert consultancy, transparent processes, and reliable service, we aim to be the most trusted name in building approval services across Tamil Nadu. Our goal is to empower every property owner with seamless approval solutions.",
     },
-    quote: "We're not just builders; We're creators of spaces that tell your story.",
+    quote: "From Plan to Approval — We Handle Everything",
     quoteDesc:
-        "We're a team of passionate professionals with a diverse skillset, allowing us to cater to a wide range of construction needs. We understand that every project is unique, and we take a personalized approach to every build.",
+        "We're a team of approval specialists, legal consultants, and government liaison experts dedicated to making your approval journey smooth and successful. Every approval is unique, and we provide personalized guidance tailored to your specific requirements.",
 }
 
 export const whyChooseUs = {
-    badge: 'Our Key points',
-    heading: 'Why Choose Us',
+    badge: 'Why Choose Us',
+    heading: 'Your Trusted Approval Partner',
     description:
-        "At CB Construction, we're dedicated to turning your vision into reality with quality, integrity, and excellence. Our experienced team and high-quality materials ensure every project exceeds expectations, prioritizing clear communication and attention to detail.",
+        "At CB Building Approval, we combine expertise, speed, and transparency to deliver exceptional approval services. Our experienced team ensures 100% legal compliance while providing personalized guidance throughout your approval journey.",
     points: [
-        { title: 'Quality, Integrity, Excellence', icon: 'award' },
-        { title: 'Experienced Team', icon: 'users' },
-        { title: 'High-Quality Materials', icon: 'package' },
-        { title: 'Clear Communication', icon: 'message-circle' },
-        { title: 'Transparency', icon: 'eye' },
-        { title: 'Attention to Detail', icon: 'search' },
+        { title: 'Fast Processing', icon: 'zap' },
+        { title: 'Expert Guidance', icon: 'users' },
+        { title: 'Legal Compliance', icon: 'shield-check' },
+        { title: 'Transparent Process', icon: 'eye' },
+        { title: 'Professional Support', icon: 'headphones' },
+        { title: 'Trusted Service', icon: 'award' },
     ],
 }
 
 export const qualityFeatures = [
-    { title: 'Quality Materials', icon: 'layers' },
-    { title: 'Quality Services', icon: 'star' },
-    { title: 'Vasthu Based Construction', icon: 'home' },
-    { title: 'On-Time Project Completion', icon: 'clock' },
-    { title: 'Team Expertise', icon: 'users' },
-    { title: '50+ Completed Projects', icon: 'briefcase' },
-    { title: 'Experienced Professionals', icon: 'award' },
-    { title: 'Daily WhatsApp/Website Updates', icon: 'smartphone' },
+    { title: 'DTCP Approval', icon: 'file-check' },
+    { title: 'CMDA Approval', icon: 'building' },
+    { title: 'Panchayat Approval', icon: 'landmark' },
+    { title: 'Fast Processing', icon: 'clock' },
+    { title: 'Expert Team', icon: 'users' },
+    { title: '500+ Approvals', icon: 'briefcase' },
+    { title: 'Legal Compliance', icon: 'shield-check' },
+    { title: 'Daily Updates', icon: 'smartphone' },
 ]
 
 export const services = {
-    badge: 'What we do',
-    heading: 'Building Your Dream Home with Care and Expertise',
+    badge: 'Our Services',
+    heading: 'Comprehensive Building Approval Solutions',
     description:
-        "At CB Construction, we're dedicated to making your dream home a reality. Our experienced team ensures every detail is perfect, from start to finish. Trust us to create a home you'll love.",
+        "At CB Building Approval, we provide end-to-end approval services for all types of building projects. Our expert team handles every aspect of the approval process, ensuring fast and legal compliance.",
     items: [
         {
-            title: 'MODEL HOUSE PLAN',
-            description: 'Custom model house plans tailored to your lifestyle and preferences.',
-            icon: 'layout',
-        },
-        {
-            title: 'APPROVAL DRAWING',
-            description: 'Professional approval drawings to meet all regulatory requirements.',
+            title: 'DTCP APPROVAL',
+            description: 'Complete DTCP approval services for residential and commercial layouts with expert guidance.',
             icon: 'file-text',
         },
         {
-            title: 'COMMERCIAL COMPLEX',
-            description: 'End-to-end construction of commercial complexes built for business success.',
+            title: 'CMDA APPROVAL',
+            description: 'Professional CMDA approval assistance for Chennai Metropolitan Development Authority projects.',
             icon: 'building',
         },
         {
-            title: 'GUEST HOUSE',
-            description: 'Elegant and functional guest house construction for comfort and hospitality.',
-            icon: 'home',
+            title: 'PANCHAYAT APPROVAL',
+            description: 'Streamlined panchayat approval services for rural and semi-urban building projects.',
+            icon: 'landmark',
+        },
+        {
+            title: 'BUILDING PERMIT',
+            description: 'Complete building permit assistance including plan approval and construction permission.',
+            icon: 'clipboard-check',
         },
     ],
 }
 
 export const packages = {
-    badge: 'Our Construction Packages',
-    heading: 'Construction Solutions to Fit Your Needs and Budget',
+    badge: 'Service Packages',
+    heading: 'Choose the Right Approval Package for You',
     items: [
         {
-            name: 'Standard Package',
+            name: 'Basic Approval',
             description:
-                'Quality construction within reach. Perfect for those seeking a reliable and cost-effective option.',
+                'Essential approval services for residential projects. Perfect for individual house approvals and small-scale projects.',
             highlight: false,
         },
         {
-            name: 'Premium Package',
+            name: 'Premium Approval',
             description:
-                'Elevated elegance and comfort. Ideal for homeowners looking for upgraded features and finishes.',
+                'Comprehensive approval services with priority processing. Ideal for commercial projects and multi-unit developments.',
             highlight: true,
         },
         {
-            name: 'Luxury Package',
+            name: 'Complete Consultancy',
             description:
-                'The ultimate grandeur. Designed for those who desire the finest craftsmanship and luxurious amenities.',
+                'End-to-end approval management with legal support. Designed for large-scale projects requiring full documentation assistance.',
             highlight: false,
         },
     ],
 }
 
 export const projects = {
-    badge: 'our work',
-    heading: 'Explore Recent Projects',
-    tagline: 'We build trust, brick by brick.',
+    badge: 'Success Stories',
+    heading: 'Recent Approvals Completed',
+    tagline: 'Your approval is our success.',
     items: [
         {
-            category: 'Alfa Projects',
-            title: 'Renovation Of Roof',
-            description: 'Complete roof renovation with modern materials and techniques.',
+            category: 'DTCP Approval',
+            title: 'Residential Layout Approval',
+            description: 'Successfully obtained DTCP approval for 50-plot residential layout in record time.',
         },
         {
-            category: 'Alfa Projects',
-            title: 'Construction Projects',
-            description: 'Full-scale construction projects delivered on time and within budget.',
+            category: 'CMDA Approval',
+            title: 'Commercial Building Permit',
+            description: 'Complete CMDA approval for 5-story commercial complex with all clearances.',
         },
         {
-            category: 'Alfa Projects',
-            title: 'General Construction',
-            description: 'General construction services covering all aspects of building.',
+            category: 'Panchayat Approval',
+            title: 'Individual House Approval',
+            description: 'Fast-tracked panchayat approval for residential construction with full documentation.',
         },
         {
-            category: 'Alfa Projects',
-            title: 'Home Construction',
-            description: 'Dream home construction with attention to every detail.',
+            category: 'Building Permit',
+            title: 'Multi-Unit Apartment Approval',
+            description: 'Comprehensive building permit approval for 20-unit apartment complex.',
         },
     ],
 }
 
 export const workProcess = {
-    badge: 'HOW WE DO WORK',
-    heading: 'Our Work Progress',
+    badge: 'OUR APPROVAL PROCESS',
+    heading: 'How We Get Your Approval',
     steps: [
         {
             number: '1',
-            title: 'Planning & Designing',
+            title: 'Document Collection',
             description:
-                "We're carefully designing your dream home, making sure it fits your needs perfectly.",
+                "We collect all necessary documents including land documents, survey plans, and ownership proofs required for approval.",
         },
         {
             number: '2',
-            title: 'Approvals',
+            title: 'Plan Verification',
             description:
-                "We're getting all the necessary permissions to start building your home smoothly.",
+                "Our experts verify your building plans for compliance with government regulations and make necessary modifications.",
         },
         {
             number: '3',
-            title: 'High Quality Materials',
+            title: 'Government Submission',
             description:
-                "We're using the best materials for your home, so it's strong and looks great.",
+                "We submit your application to the relevant authorities (DTCP/CMDA/Panchayat) with complete documentation.",
         },
         {
             number: '4',
-            title: 'Building',
+            title: 'Approval Processing',
             description:
-                'Our expert team is making sure your home is built right, with precision and care.',
+                'We follow up with government offices, handle queries, and ensure smooth processing of your approval.',
         },
         {
             number: '5',
-            title: 'House Warming',
+            title: 'Final Approval Delivery',
             description:
-                "We'll complete the final touches and hand over your keys for a smooth housewarming.",
+                "Once approved, we collect and deliver your official approval documents with all necessary certifications.",
         },
     ],
 }
 
 export const statistics = {
-    badge: 'Know More About Our Success',
-    heading: 'Our Achievements',
+    badge: 'Our Track Record',
+    heading: 'Numbers That Speak',
     items: [
-        { value: 50, suffix: '+', label: 'Completed Projects' },
-        { value: 7, suffix: '+', label: 'Years Experience' },
-        { value: 100, suffix: '%', label: 'Client Satisfaction' },
-        { value: 30, suffix: '+', label: 'Expert Professionals' },
+        { value: 500, suffix: '+', label: 'Approvals Completed' },
+        { value: 10, suffix: '+', label: 'Years Experience' },
+        { value: 100, suffix: '%', label: 'Legal Compliance' },
+        { value: 300, suffix: '+', label: 'Happy Clients' },
     ],
 }
 
 export const testimonials = {
-    badge: 'Client Stories',
-    heading: 'Hear From Our Happy Clients',
+    badge: 'Client Testimonials',
+    heading: 'What Our Clients Say',
     items: [
         {
-            name: 'V. Ashokan',
-            role: 'Client',
+            name: 'Rajesh Kumar',
+            role: 'Property Owner',
             feedback:
-                'CB Construction Company built our new home, and we are extremely satisfied with the quality and professionalism. The project was completed ahead of schedule and under budget, with excellent communication throughout the entire process.',
+                'CB Building Approval made the entire DTCP approval process seamless. Their team handled everything professionally, and we got our approval in record time. Highly recommended for anyone seeking building approvals!',
             rating: 5,
         },
         {
-            name: 'Shankar',
-            role: 'Client',
+            name: 'Priya Sharma',
+            role: 'Builder',
             feedback:
-                'It was the right decision to go with CB constructions for building my farmhouse. No substandard materials were used ensuring no compromise with the quality. Being away in Bangalore, I was kept fully informed at every stage.',
+                'Excellent service! They guided us through the complex CMDA approval process with expertise. The team was always available to answer our questions and kept us updated at every step. Very satisfied with their service.',
             rating: 5,
         },
         {
-            name: 'Venugopal R',
-            role: 'Senior Engineer, Titan Company Limited',
+            name: 'Venkatesh R',
+            role: 'Architect',
             feedback:
-                "Right from the idea I got to build my new home, I don't have the clear picture of how I'm going to build it, with whom and how it's going to look. CB Construction guided me through every step and made it a reality.",
+                "I've worked with CB Building Approval on multiple projects. Their knowledge of government procedures and attention to detail is exceptional. They make the approval process stress-free and efficient.",
             rating: 5,
         },
         {
-            name: 'P. Vincent Arputharaj',
-            role: 'Client',
+            name: 'Anitha Devi',
+            role: 'Home Owner',
             feedback:
-                'CB Construction exceeded all my expectations. Their attention to detail, professionalism, and dedication to delivering high-quality results were evident throughout the project. Their team was professional, efficient, and their attention to detail was outstanding.',
+                'Getting panchayat approval for my house was so easy with their help. The team was professional, transparent, and delivered exactly what they promised. I would definitely recommend their services to others.',
             rating: 5,
         },
     ],
 }
 
 export const ctaBanner = {
-    tagline: 'Feel Free to call us now',
-    heading: 'Leading No.1 Construction Company in Shoolagiri',
-    subheading: 'Bigger, Better, Faster',
-    ctaText: 'Call Us Now',
+    tagline: 'Need Building Approval?',
+    heading: 'Leading Building Approval Consultancy in Tamil Nadu',
+    subheading: 'Fast, Legal, Trusted',
+    ctaText: 'Get Free Consultation',
     ctaHref: 'tel:+917448922333',
 }
 
 export const contactDetails = {
     address: 'Shop No. 2, Shoolagiri Main Road, Near KVB Bank, Shoolagiri - 635 117',
     phone: '+91-7448922333',
-    email: 'info@cbconstructions.in',
+    email: 'info@cbbuildingapproval.com',
     mapEmbedUrl:
         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.123456789!2d77.9!3d12.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDMwJzAwLjAiTiA3N8KwNTQnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890',
 }
 
 export const footer = {
-    companyName: 'CB Construction',
-    tagline: 'Quality is our Success',
+    companyName: 'CB Building Approval',
+    tagline: 'Your Approval Process Simplified',
     description:
-        "We're dedicated to quality, integrity, and excellence, crafting homes that reflect your dreams and aspirations.",
+        "Expert guidance for all your building approval needs. We handle DTCP, CMDA, Panchayat approvals and all government procedures with precision and speed.",
     quickLinks: [
         { label: 'Home', href: '#home' },
         { label: 'About', href: '#about' },
         { label: 'Services', href: '#services' },
-        { label: 'Projects', href: '#projects' },
+        { label: 'Approvals', href: '#approvals' },
+        { label: 'Process', href: '#process' },
         { label: 'Contact', href: '#contact' },
     ],
     serviceLinks: [
-        { label: 'Model House Plan', href: '#services' },
-        { label: 'Approval Drawing', href: '#services' },
-        { label: 'Commercial Complex', href: '#services' },
-        { label: 'Guest House', href: '#services' },
+        { label: 'DTCP Approval', href: '#services' },
+        { label: 'CMDA Approval', href: '#services' },
+        { label: 'Panchayat Approval', href: '#services' },
+        { label: 'Building Permit', href: '#services' },
     ],
     contact: {
         address: 'Shop No. 2, Shoolagiri Main Road, Near KVB Bank, Shoolagiri - 635 117',
         phone: '+91-7448922333',
-        email: 'info@cbconstructions.in',
+        email: 'info@cbbuildingapproval.com',
     },
     social: [
         { platform: 'facebook', href: '#' },
         { platform: 'instagram', href: '#' },
+        { platform: 'linkedin', href: '#' },
         { platform: 'whatsapp', href: 'https://wa.me/917448922333' },
         { platform: 'youtube', href: '#' },
     ],
-    copyright: '© 2024 CB Construction India Pvt Ltd. All rights reserved.',
-    iso: 'ISO 9001:2015 Certified',
+    copyright: '© 2024 CB Building Approval. All rights reserved.',
+    iso: 'Trusted Approval Consultancy',
 }

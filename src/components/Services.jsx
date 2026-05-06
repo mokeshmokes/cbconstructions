@@ -1,13 +1,13 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Layout, FileText, Building, Home, ArrowRight } from 'lucide-react'
+import { FileText, Building, Landmark, ClipboardCheck, ArrowRight } from 'lucide-react'
 import { services } from '../data/content'
 
 const iconMap = {
-    layout: Layout,
     'file-text': FileText,
     building: Building,
-    home: Home,
+    landmark: Landmark,
+    'clipboard-check': ClipboardCheck,
 }
 
 export default function Services() {
@@ -121,15 +121,9 @@ export default function Services() {
                                         </h3>
 
                                         {/* Description */}
-                                        <p className="text-gray-600 leading-relaxed mb-6">
+                                        <p className="text-gray-600 leading-relaxed">
                                             {service.description}
                                         </p>
-
-                                        {/* Learn More Link */}
-                                        <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
-                                            <span className="mr-2">Learn More</span>
-                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                        </div>
                                     </div>
 
                                     {/* Decorative Elements */}

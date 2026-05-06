@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Building, Users, Award, Clock } from 'lucide-react'
 import { statistics } from '../data/content'
+import CertificationBadge from './CertificationBadge'
 
 export default function Statistics() {
     const ref = useRef(null)
@@ -208,22 +209,18 @@ export default function Statistics() {
                     })}
                 </motion.div>
 
-                {/* Bottom CTA */}
+                {/* Bottom CTA - Certification Image Only */}
                 <motion.div
                     variants={itemVariants}
                     initial="hidden"
                     animate={isInView ? "visible" : "hidden"}
                     className="text-center mt-16"
                 >
-                    <div className="inline-flex items-center space-x-4 glass-dark rounded-2xl px-8 py-6">
-                        <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center">
-                            <Award className="w-6 h-6 text-white" />
-                        </div>
-                        <div className="text-left">
-                            <p className="text-white font-semibold">ISO 9001:2015 Certified</p>
-                            <p className="text-gray-300 text-sm">Quality Management System</p>
-                        </div>
-                    </div>
+                    <CertificationBadge
+                        size="lg"
+                        animate={true}
+                        theme="dark"
+                    />
                 </motion.div>
             </div>
         </section>

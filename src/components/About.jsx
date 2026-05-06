@@ -1,7 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import { Target, Eye, Quote, CheckCircle, Award, Users } from 'lucide-react'
 import { aboutSection } from '../data/content'
 

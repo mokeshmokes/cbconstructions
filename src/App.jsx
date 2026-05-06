@@ -9,7 +9,7 @@ const Services = lazy(() => import('./components/Services'))
 const Packages = lazy(() => import('./components/Packages'))
 const WhyChooseUs = lazy(() => import('./components/WhyChooseUs'))
 const Statistics = lazy(() => import('./components/Statistics'))
-const Projects = lazy(() => import('./components/Projects'))
+const Approvals = lazy(() => import('./components/Approvals'))
 const WorkProcess = lazy(() => import('./components/WorkProcess'))
 const CTABanner = lazy(() => import('./components/CTABanner'))
 const Testimonials = lazy(() => import('./components/Testimonials'))
@@ -20,6 +20,15 @@ const Footer = lazy(() => import('./components/Footer'))
 const SectionLoader = () => (
     <div className="flex items-center justify-center py-20">
         <div className="w-12 h-12 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
+    </div>
+)
+
+// Error fallback component
+const ErrorFallback = ({ componentName }) => (
+    <div className="flex items-center justify-center py-20 bg-red-50">
+        <div className="text-center">
+            <p className="text-red-600">Failed to load {componentName}</p>
+        </div>
     </div>
 )
 
@@ -48,7 +57,7 @@ export default function App() {
                     <Statistics />
                 </Suspense>
                 <Suspense fallback={<SectionLoader />}>
-                    <Projects />
+                    <Approvals />
                 </Suspense>
                 <Suspense fallback={<SectionLoader />}>
                     <WorkProcess />

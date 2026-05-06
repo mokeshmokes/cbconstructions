@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, ChevronDown, Play, Award, Users, Building } from 'lucide-react'
+import { ArrowRight, ChevronDown, Play, Users, Building, Award } from 'lucide-react'
 import { heroSection } from '../data/content'
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
     }
 
     return (
-        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
             {/* Dynamic Background */}
             <div className="absolute inset-0">
                 {/* Base gradient */}
@@ -91,17 +91,6 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 container-custom text-center text-white">
                 <div className="max-w-5xl mx-auto">
-                    {/* Badge */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-lg border border-white/20 rounded-full px-6 py-3 mb-8"
-                    >
-                        <Award className="w-5 h-5 text-yellow-400" />
-                        <span className="text-sm font-medium">ISO 9001:2015 Certified</span>
-                    </motion.div>
-
                     {/* Main Heading */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
@@ -168,24 +157,24 @@ export default function Hero() {
                         </a>
                     </motion.div>
 
-                    {/* Stats */}
+                    {/* Stats - Added bottom padding to prevent overlap */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1.2 }}
-                        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto"
+                        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto pb-16 md:pb-20"
                     >
                         <div className="text-center">
                             <div className="flex items-center justify-center mb-2">
                                 <Building className="w-8 h-8 text-blue-400 mr-2" />
-                                <span className="text-3xl font-bold">50+</span>
+                                <span className="text-3xl font-bold">500+</span>
                             </div>
-                            <p className="text-gray-300">Projects Completed</p>
+                            <p className="text-gray-300">Approvals Completed</p>
                         </div>
                         <div className="text-center">
                             <div className="flex items-center justify-center mb-2">
                                 <Users className="w-8 h-8 text-green-400 mr-2" />
-                                <span className="text-3xl font-bold">7+</span>
+                                <span className="text-3xl font-bold">10+</span>
                             </div>
                             <p className="text-gray-300">Years Experience</p>
                         </div>
@@ -194,27 +183,28 @@ export default function Hero() {
                                 <Award className="w-8 h-8 text-yellow-400 mr-2" />
                                 <span className="text-3xl font-bold">100%</span>
                             </div>
-                            <p className="text-gray-300">Client Satisfaction</p>
+                            <p className="text-gray-300">Legal Compliance</p>
                         </div>
                     </motion.div>
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
+            {/* Scroll Indicator - Positioned below stats with proper spacing */}
             <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5 }}
                 onClick={scrollToNext}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 hover:text-white transition-colors group"
+                className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 hover:text-white transition-colors group z-20"
+                style={{ marginTop: '2rem' }}
             >
                 <div className="flex flex-col items-center space-y-2">
-                    <span className="text-sm font-medium">Scroll to explore</span>
+                    <span className="text-xs md:text-sm font-medium">Scroll to explore</span>
                     <motion.div
                         animate={{ y: [0, 10, 0] }}
                         transition={{ duration: 2, repeat: Infinity }}
                     >
-                        <ChevronDown className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                        <ChevronDown className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform" />
                     </motion.div>
                 </div>
             </motion.button>
