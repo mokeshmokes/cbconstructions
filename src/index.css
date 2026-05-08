@@ -88,17 +88,23 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Glassmorphism Effect */
+  /* Optimized Glassmorphism Effect */
   .glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    /* Reduced opacity */
+    backdrop-filter: blur(8px);
+    /* Reduced blur */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    /* Reduced opacity */
   }
 
   .glass-dark {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.08);
+    /* Reduced opacity */
+    backdrop-filter: blur(8px);
+    /* Reduced blur */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* Reduced opacity */
   }
 
   /* Premium Gradients */
@@ -121,21 +127,25 @@
     background-clip: text;
   }
 
-  /* Hover Lift Effect */
+  /* Optimized Hover Lift Effect */
   .hover-lift {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Reduced duration */
   }
 
   .hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+    /* Reduced distance */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow */
   }
 
-  /* Premium Button Styles */
+  /* Optimized Premium Button Styles */
   .btn-premium {
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Specific transitions only */
   }
 
   .btn-premium::before {
@@ -145,29 +155,38 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    /* Reduced opacity */
+    transition: left 0.3s;
+    /* Reduced duration */
   }
 
   .btn-premium:hover::before {
     left: 100%;
   }
 
-  /* Premium Card Styles */
+  /* Optimized Premium Card Styles */
   .card-premium {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.92);
+    /* Reduced transparency */
+    backdrop-filter: blur(12px);
+    /* Reduced blur */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    /* Reduced opacity */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    /* Reduced shadow */
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Reduced duration */
   }
 
   .card-premium:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    /* Reduced distance */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    /* Reduced shadow */
   }
 
-  /* Animated Underline */
+  /* Optimized Animated Underline */
   .animated-underline {
     position: relative;
   }
@@ -180,22 +199,26 @@
     width: 0;
     height: 2px;
     background: var(--gradient-primary);
-    transition: width 0.3s ease;
+    transition: width 0.2s ease;
+    /* Reduced duration */
   }
 
   .animated-underline:hover::after {
     width: 100%;
   }
 
-  /* Premium Logo Glow Effect */
+  /* Optimized Premium Logo Glow Effect */
   .logo-glow-container {
     position: relative;
-    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.3));
-    transition: filter 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.2));
+    /* Reduced glow */
+    transition: filter 0.2s ease;
+    /* Reduced duration */
   }
 
   .logo-glow-container:hover {
-    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.5));
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.3));
+    /* Reduced glow */
   }
 }
 
@@ -318,5 +341,38 @@
   .container-custom {
     max-width: 100%;
     overflow-x: hidden;
+  }
+
+  /* Performance optimizations for animations */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .will-change-opacity {
+    will-change: opacity;
+  }
+
+  /* Optimized backdrop filters */
+  .backdrop-blur-optimized {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  /* Reduced motion for performance */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* GPU acceleration for common elements */
+  .card-premium,
+  .btn-premium,
+  .glass,
+  .glass-dark {
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 }
