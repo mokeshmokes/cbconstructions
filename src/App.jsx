@@ -1,6 +1,7 @@
-import React, { Suspense, lazy } from 'react'
+import { Suspense, lazy, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Preloader from './components/Preloader'
 
 // Lazy load components for better performance
 const QualityFeatures = lazy(() => import('./components/QualityFeatures'))
@@ -33,48 +34,62 @@ const ErrorFallback = ({ componentName }) => (
 )
 
 export default function App() {
+    const [showPreloader, setShowPreloader] = useState(true)
+
+    const handlePreloaderComplete = () => {
+        setShowPreloader(false)
+    }
+
     return (
-        <div className="min-h-screen bg-white">
-            <Navbar />
-            <main>
-                <Hero />
-                <Suspense fallback={<SectionLoader />}>
-                    <QualityFeatures />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <About />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <Services />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <Packages />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <WhyChooseUs />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <Statistics />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <Approvals />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <WorkProcess />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <CTABanner />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <Testimonials />
-                </Suspense>
-                <Suspense fallback={<SectionLoader />}>
-                    <Contact />
-                </Suspense>
-            </main>
-            <Suspense fallback={<SectionLoader />}>
-                <Footer />
-            </Suspense>
+        <div className="min-h-screen bg-white overflow-hidden w-full" style={{ maxWidth: '100%' }}>
+            {/* Premium Cinematic Preloader */}
+            {showPreloader && <Preloader onComplete={handlePreloaderComplete} />}
+
+            {/* Main Website Content */}
+            {!showPreloader && (
+                <>
+                    <Navbar />
+                    <main className="overflow-hidden w-full" style={{ maxWidth: '100%' }}>
+                        <Hero />
+                        <Suspense fallback={<SectionLoader />}>
+                            <QualityFeatures />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <About />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <Services />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <Packages />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <WhyChooseUs />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <Statistics />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <Approvals />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <WorkProcess />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <CTABanner />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <Testimonials />
+                        </Suspense>
+                        <Suspense fallback={<SectionLoader />}>
+                            <Contact />
+                        </Suspense>
+                    </main>
+                    <Suspense fallback={<SectionLoader />}>
+                        <Footer />
+                    </Suspense>
+                </>
+            )}
         </div>
     )
 }

@@ -52,34 +52,39 @@ export default function Navbar() {
         >
             <div className="container-custom">
                 <div className="flex items-center justify-between h-20">
-                    {/* Logo - Clean Professional Branding */}
+                    {/* Premium Branding Layout - Logo + Company Name */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="flex items-center space-x-3 cursor-pointer"
+                        className="flex items-center space-x-4 cursor-pointer"
                         onClick={() => scrollToSection('#home')}
                     >
-                        {/* Clean logo without heavy effects */}
-                        <Logo
-                            size="md"
-                            animate={true}
-                        />
+                        {/* Larger Logo for Premium Branding Impact */}
+                        <div className="relative">
+                            <Logo
+                                size="lg"
+                                animate={true}
+                                className="drop-shadow-sm w-27 h-27"
+                            />
+                            {/* Subtle premium glow effect */}
+                            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-md opacity-0 hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                        </div>
 
-                        {/* Company name with clean professional styling */}
-                        <div className="flex flex-col">
-                            <h1 className={`text-lg md:text-xl font-bold transition-colors duration-300 leading-tight ${isScrolled
-                                    ? 'text-gray-900'
-                                    : 'text-white'
+                        {/* Company Name - Single Line Layout */}
+                        <div className="flex flex-col justify-center">
+                            <h1 className={`text-xl md:text-2xl lg:text-3xl font-bold transition-colors duration-300 leading-tight whitespace-nowrap ${isScrolled
+                                ? 'text-gray-900'
+                                : 'text-white drop-shadow-sm'
                                 }`}>
-                                CB Building Approval
+                                CB BUILDING APPROVAL.COM
                             </h1>
-                            <p className={`text-xs font-medium transition-colors duration-300 ${isScrolled
-                                    ? 'text-blue-600'
-                                    : 'text-blue-100'
+                            {/* <p className={`text-xs md:text-sm font-medium transition-colors duration-300 whitespace-nowrap ${isScrolled
+                                ? 'text-blue-600'
+                                : 'text-blue-200'
                                 }`}>
-                                {/* Your Approval Simplified */}
-                            </p>
+                                CB Building Approval.com
+                            </p> */}
                         </div>
                     </motion.div>
 

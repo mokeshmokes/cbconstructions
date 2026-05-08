@@ -44,11 +44,11 @@ export default function WorkProcess() {
 
     return (
         <section className="section-padding bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-            {/* Background Elements */}
-            <div className="absolute inset-0">
-                <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-200/20 to-pink-200/20 rounded-full blur-3xl"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-100/10 to-purple-100/10 rounded-full blur-3xl"></div>
+            {/* Background Elements - Fixed overflow issues */}
+            <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute top-20 left-4 md:left-20 w-64 h-64 md:w-96 md:h-96 bg-gradient-to-r from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-20 right-4 md:right-20 w-64 h-64 md:w-96 md:h-96 bg-gradient-to-r from-purple-200/20 to-pink-200/20 rounded-full blur-3xl"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:w-[600px] md:h-[600px] bg-gradient-to-r from-blue-100/10 to-purple-100/10 rounded-full blur-3xl"></div>
             </div>
 
             <div className="container-custom relative z-10" ref={ref}>
